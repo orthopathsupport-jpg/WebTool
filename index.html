@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NexoraWeb — Build your website with AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">⚡ NexoraWeb</div>
+</nav>
+
+<header id="hero">
+  <h1>Build your website with AI.</h1>
+  <p>Describe what you want. It generates instantly. You own the result.</p>
+  <div class="promptbox">
+    <textarea id="prompt" placeholder="Create a modern website for a Greek construction company called Aegean Build. Use navy and gold."></textarea>
+    <button onclick="handleGenerate()">Create Website</button>
+  </div>
+</header>
+
+<main id="dashboard">
+  <h2>My Websites</h2>
+  <div id="list"></div>
+</main>
+
+<main id="builder" class="hidden">
+  <div class="builder-bar">
+    <button class="link" onclick="showDashboard()">← Dashboard</button>
+    <b id="builderTitle"></b>
+    <button class="link" onclick="exportSite()">Export HTML</button>
+  </div>
+  <iframe id="preview" title="Website preview"></iframe>
+</main>
+
+<footer>NexoraWeb — saved on this device only. Export any project to keep it forever.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
